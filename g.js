@@ -35,9 +35,9 @@ const div = (a, b) => (
 const tinhDienTich = async (a, b, h) => {
     const tong = await add(a, b);
     const tich = await mul(tong, h);
-    const dt = await div(tich, 2);
-    return dt;
+    return await div(tich, 2);
 };
 
 tinhDienTich(4, 5, 6)
-.then(r => console.log(r));
+.then(r => console.log(r))
+.catch(err => console.log(err));
