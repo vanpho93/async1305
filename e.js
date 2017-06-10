@@ -10,7 +10,7 @@ const add = (a, b) => (
 
 add(4, 5)
 .then(tong => tong * 2)
-.then(a => a * 2)
+.then(a => a * f)
 .then(b => add(b, '-30'))
 .catch(err => {
     console.log(err);
