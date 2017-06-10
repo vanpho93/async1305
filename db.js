@@ -23,4 +23,6 @@ function queryDB(sql, arrValue) {
     });
 }
 
+queryDB('SELECT * FROM "HotGirl" WHERE id = $1 AND age > $2', [2, 18])
+.then(result => console.log(result.rows));
 
